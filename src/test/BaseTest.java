@@ -109,7 +109,7 @@ public class BaseTest{
 
         extentReports = new ExtentReports();
         extentReports.attachReporter(sparkFail, extentHtmlReporter);
-        extentReports.setSystemInfo("Automation Engineer", "Hamza Ashfaq");
+        extentReports.setSystemInfo("Automation Engineer", "Shameem Akhtar");
 
         setRestAssuredBaseURL();
         //setRestAssuredAuthHeader();
@@ -224,7 +224,7 @@ public class BaseTest{
 
     public WebDriver setDriver(String browser, boolean headless) {
         if (browser.equalsIgnoreCase("chrome")) {
-            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + File.separator + "drivers" + File.separator + "chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + File.separator + "drivers" + File.separator + "chromedriver");
             ChromeOptions chromeOptions = new ChromeOptions();
             //chromeOptions.setBinary("C:\\Google Chrome Selenium\\chrome.exe");
             if (headless) {
@@ -235,7 +235,7 @@ public class BaseTest{
             System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + File.separator + "drivers" + File.separator + "geckodriver.exe");
             driver = new FirefoxDriver();
         } else {
-            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + File.separator + "drivers" + File.separator + "chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + File.separator + "drivers" + File.separator + "chromedriver");
             driver = new ChromeDriver();
         }
 

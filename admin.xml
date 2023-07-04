@@ -21,7 +21,7 @@
         </groups>
 
         <classes>
-<!--            <class name="test.ADMIN.LogIn.LogInTest"/>-->
+            <class name="test.ADMIN.LogIn.LogInTest"/>
             <class name="test.ADMIN.Venues.AddVenuesTest"/>
         </classes>
 
